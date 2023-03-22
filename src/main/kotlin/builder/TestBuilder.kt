@@ -1,6 +1,7 @@
 package builder
+
 fun main(){
-    val employee = Employee.EmployeeBuilder()
+    val employee = Employee.Builder()
         .setName("Lucia Perez Perez")
         .setGender("Female")
         .setAge(30)
@@ -13,5 +14,5 @@ fun main(){
         .addPhones("4567890234", null, "Celular")
         .addPhones("7788990099", null, "Casa")
         .build()
-    println(employee.toString())
+    println(employee)
 }
